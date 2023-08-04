@@ -1,12 +1,24 @@
 {
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true
-    },
-    "ignore": ["node_modules", ".next", "dist"]
-  },
-  "formatter": {
-    "ignore": ["node_modules", ".next", "dist"]
-  }
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		},
+		"ignore": ["node_modules", ".next", "dist"]
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "tab",
+		"indentSize": 2,
+		"lineWidth": 80,
+		"ignore": ["node_modules", ".next", "dist"]
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"quoteStyle": "single",
+			"trailingComma": "es5"
+		}
+	}
 }
