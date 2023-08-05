@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import LocalFont from 'next/font/local'
 import { Metadata } from 'next'
 import { ReactNode } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
 	title: {
@@ -42,7 +43,13 @@ const RootLayout = ({
 }) => {
 	return (
 		<html lang='en' className={[inter.variable, calSans.variable].join(' ')}>
-			<body className={'bg-black'}>{children}</body>
+			<head>
+				<title>OxyStack</title>
+			</head>
+			<body className={'bg-black'}>
+				{children}
+				<Analytics />
+			</body>
 		</html>
 	)
 }
