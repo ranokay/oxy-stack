@@ -11,7 +11,7 @@
 		"clean": "rimraf .next node_modules pnpm-lock.yaml"
 	},
 	"dependencies": {
-		"@vercel/analytics": "^1.0.1",
+		"@vercel/analytics": "^1.2.2",
 		"framer-motion": "^10.16.1",
 		"next": "13.4.12",
 		"react": "18.2.0",
